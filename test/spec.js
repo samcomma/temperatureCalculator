@@ -10,13 +10,19 @@ describe('calculator', ()=> {
 
 	describe('convertToFfromC', ()=> {
 		it('should convert Fahrenheit to Celsius', ()=> {
-			expect(calculator.convertToFfromC(10)).to.eql(50)
+			expect(calculator.convertToFfromC(0)).to.eql(32)
+		});
+		it('should convert Fahrenheit to Celsius', ()=> {
+			expect(calculator.convertToFfromC(100)).to.eql(212)
 		});
 	});
 
 	describe('convertToCfromF', ()=> {
 		it('should convert Fahrenheit to Celsius', ()=> {
-			expect(calculator.convertToCfromF(50)).to.eql(10)
+			expect(calculator.convertToCfromF(32)).to.eql(0)
+		});
+		it('should convert Fahrenheit to Celsius', ()=> {
+			expect(calculator.convertToCfromF(212)).to.eql(100)
 		});
 	});
 
